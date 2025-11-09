@@ -1,0 +1,326 @@
+/* GENERAL STYLE*/
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue", cursive, sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Nav STYLE (Desktop First) */
+.navbar-section {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.site-name {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.nav-link {
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav-link:hover {
+  background-color: #555;
+  color: #ffcc00;
+}
+
+/* Mobile Menu Toggle Button (Hidden by default) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* ------------------------------------- */
+/* BASE SECTION STYLING */
+/* ------------------------------------- */
+section {
+  padding: 80px 20px;
+  min-height: 80vh;
+  scroll-margin-top: 90px; /* Offset for sticky nav */
+}
+
+/* 1. HERO SECTION */
+#home {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+}
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+.cta-button {
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.cta-button:hover {
+  background-color: #e6b800;
+}
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ffcc00;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* 2. ABOUT SECTION */
+#about {
+  background-color: #fff;
+}
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-content,
+.about-media {
+  flex: 1;
+}
+.placeholder-image {
+  width: 100%;
+  height: 350px;
+  background-color: #eee;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* 3. SERVICES SECTION */
+#services {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+.service-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  text-align: left;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+}
+.card-icon {
+  font-size: 40px;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+.card-description {
+  color: #555;
+}
+
+/* 4. CONTACT SECTION */
+#contact {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact-title {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 40px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: 400;
+  color: #ccc;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: white;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+.contact-form .submit-button {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.contact-form .submit-button:hover {
+  background-color: #e6b800;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ------------------------------------- */
+/* RESPONSIVENESS (Mobile Layout) */
+/* ------------------------------------- */
+@media (max-width: 768px) {
+  /* Nav Overrides */
+  .navbar-section {
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 0;
+  }
+  .right-nav {
+    flex-grow: 1;
+  }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .left-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .left-nav.active {
+    display: flex;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+  }
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+  }
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  /* Section Overrides */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* Stack About section content */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-media {
+    order: -1; /* Move image/placeholder above text */
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .cta-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}

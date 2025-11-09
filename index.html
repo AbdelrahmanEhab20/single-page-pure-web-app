@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- ###### -->
+    <title>Single Page Test</title>
+</head>
+
+<body>
+    <!-- 🟢📒 Navbar section here 🟢📒 -->
+    <nav class="navbar-section">
+        <!-- right side name and logo -->
+        <div class="right-nav">
+            <div class="logo-container">
+                <!-- Placeholder SVG for the logo -->
+                <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#ffcc00" />
+                    <text x="50" y="60" font-family="Arial, sans-serif" font-size="35" fill="#333" text-anchor="middle"
+                        font-weight="bold">SP</text>
+                </svg>
+            </div>
+            <div class="site-name">Single Page</div>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            &#9776; <!-- Hamburger Icon -->
+        </button>
+
+        <!-- left side nav links -->
+        <div class="left-nav" id="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    <!-- ⬛️🔵 Navbar section END 🔵⬛️ -->
+
+    <main>
+        <!-- 1. HERO SECTION (ID: home) -->
+        <section id="home">
+            <h1 class="hero-title">Welcome to Single Page Magic!</h1>
+            <p class="hero-subtitle">We craft simple, clean, and ridiculously responsive web solutions tailored for you.
+                Get started below.</p>
+            <a href="#contact" class="cta-button">Start Your Project Today</a>
+        </section>
+
+        <!-- 2. ABOUT SECTION (ID: about) -->
+        <section id="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="section-title">About Our Mission</h2>
+                    <p>We believe that simplicity is the ultimate sophistication. Our goal is to cut through the
+                        complexity of modern web development and deliver fast, accessible, and beautiful single-page
+                        experiences.</p>
+                    <p style="margin-top: 20px; color: #555;">Founded on the principles of clean code and user-centric
+                        design, we focus on delivering maximum impact with minimal clutter. Every project is built from
+                        the ground up to be fully responsive, ensuring perfect viewing across all devices.</p>
+                </div>
+                <div class="about-media">
+                    <div class="placeholder-image">
+                        [Image Placeholder for About Section]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SERVICES SECTION (ID: services) -->
+        <section id="services">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-icon">⚙️</div>
+                    <div class="card-title">Responsive Design</div>
+                    <p class="card-description">Code designed for perfect performance and aesthetics on mobile phones,
+                        tablets, and desktop monitors.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">🚀</div>
+                    <div class="card-title">Blazing Fast Speed</div>
+                    <p class="card-description">Optimized structure and minimal assets ensure your page loads instantly,
+                        improving user satisfaction and SEO.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">✨</div>
+                    <div class="card-title">Custom Styling</div>
+                    <p class="card-description">Unique, modern CSS tailored to your brand identity, ensuring a clean and
+                        memorable visual experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PORTFOLIO SECTION (ID: portfolio - Added for completeness) -->
+        <section id="portfolio" style="background-color: #fff; text-align: center;">
+            <h2 class="section-title">Our Latest Work</h2>
+            <p style="margin-bottom: 40px; color: #555;">A glimpse into the diverse projects we've brought to life.</p>
+            <div class="services-grid"> <!-- Reusing services-grid for card-style portfolio items -->
+                <div class="service-card" style="text-align: center;">
+                    <div class="placeholder-image" style="height: 200px; margin-bottom: 20px;">
+                        [Image Placeholder: Project 1]
+                    </div>
+                    <div class="card-title">Project: E-commerce Site</div>
+                    <p class="card-description">A fully responsive shopping experience.</p>
+                </div>
+                <div class="service-card" style="text-align: center;">
+                    <div class="placeholder-image" style="height: 200px; margin-bottom: 20px;">
+                        [Image Placeholder: Project 2]
+                    </div>
+                    <div class="card-title">Project: Dashboard UI</div>
+                    <p class="card-description">Clean data visualization design.</p>
+                </div>
+                <div class="service-card" style="text-align: center;">
+                    <div class="placeholder-image" style="height: 200px; margin-bottom: 20px;">
+                        [Image Placeholder: Project 3]
+                    </div>
+                    <div class="card-title">Project: Landing Page</div>
+                    <p class="card-description">High-conversion marketing page.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CONTACT SECTION (ID: contact) -->
+        <section id="contact">
+            <div class="contact-container">
+                <h2 class="contact-title" style="color: #ffcc00; border-bottom-color: #555;">Get in Touch</h2>
+                <form class="contact-form">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Single Page Test | All Rights Reserved.
+    </footer>
+    <!-- script src -->
+    <script src="script.js"></script>
+</body>
+
+</html>
