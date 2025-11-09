@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("active");
   });
 });
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
