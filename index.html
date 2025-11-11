@@ -42,6 +42,7 @@
             <a href="#home" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#services" class="nav-link">Services</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
             <a href="#contact" class="nav-link">Contact</a>
         </div>
     </nav>
@@ -69,9 +70,7 @@
                         the ground up to be fully responsive, ensuring perfect viewing across all devices.</p>
                 </div>
                 <div class="about-media">
-                    <div class="placeholder-image">
-                        [Image Placeholder for About Section]
-                    </div>
+                    <img src="./assets/work/1-109.png" alt="About illustration" class="about-image reveal">
                 </div>
             </div>
         </section>
@@ -80,19 +79,19 @@
         <section id="services">
             <h2 class="section-title">What We Offer</h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card reveal">
                     <div class="card-icon">⚙️</div>
                     <div class="card-title">Responsive Design</div>
                     <p class="card-description">Code designed for perfect performance and aesthetics on mobile phones,
                         tablets, and desktop monitors.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card reveal">
                     <div class="card-icon">🚀</div>
                     <div class="card-title">Blazing Fast Speed</div>
                     <p class="card-description">Optimized structure and minimal assets ensure your page loads instantly,
                         improving user satisfaction and SEO.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card reveal">
                     <div class="card-icon">✨</div>
                     <div class="card-title">Custom Styling</div>
                     <p class="card-description">Unique, modern CSS tailored to your brand identity, ensuring a clean and
@@ -101,32 +100,40 @@
             </div>
         </section>
 
-        <!-- 4. PORTFOLIO SECTION (ID: portfolio - Added for completeness) -->
+        <!-- 4. PORTFOLIO SECTION (Carousel) -->
         <section id="portfolio" style="background-color: #fff; text-align: center;">
             <h2 class="section-title">Our Latest Work</h2>
-            <p style="margin-bottom: 40px; color: #555;">A glimpse into the diverse projects we've brought to life.</p>
-            <div class="services-grid"> <!-- Reusing services-grid for card-style portfolio items -->
-                <div class="service-card" style="text-align: center;">
-                    <div class="placeholder-image" style="height: 200px; margin-bottom: 20px;">
-                        [Image Placeholder: Project 1]
+            <p style="margin-bottom: 24px; color: #555;">A glimpse into the diverse projects we've brought to life.</p>
+            <div class="carousel reveal" aria-roledescription="carousel">
+                <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="./assets/work/1-101.png" alt="Concept Visual – 01">
+                        <div class="carousel-caption">Concept Visual – 01</div>
                     </div>
-                    <div class="card-title">Project: E-commerce Site</div>
-                    <p class="card-description">A fully responsive shopping experience.</p>
-                </div>
-                <div class="service-card" style="text-align: center;">
-                    <div class="placeholder-image" style="height: 200px; margin-bottom: 20px;">
-                        [Image Placeholder: Project 2]
+                    <div class="carousel-slide">
+                        <img src="./assets/work/1-102.png" alt="E-commerce Mockup">
+                        <div class="carousel-caption">E-commerce Mockup</div>
                     </div>
-                    <div class="card-title">Project: Dashboard UI</div>
-                    <p class="card-description">Clean data visualization design.</p>
-                </div>
-                <div class="service-card" style="text-align: center;">
-                    <div class="placeholder-image" style="height: 200px; margin-bottom: 20px;">
-                        [Image Placeholder: Project 3]
+                    <div class="carousel-slide">
+                        <img src="./assets/work/1-103.png" alt="Dashboard UI">
+                        <div class="carousel-caption">Dashboard UI</div>
                     </div>
-                    <div class="card-title">Project: Landing Page</div>
-                    <p class="card-description">High-conversion marketing page.</p>
+                    <div class="carousel-slide">
+                        <img src="./assets/work/1-104.png" alt="Landing Page">
+                        <div class="carousel-caption">Landing Page</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/work/1-106.png" alt="Illustration Exploration">
+                        <div class="carousel-caption">Illustration Exploration</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/work/1-108.png" alt="Product Cards">
+                        <div class="carousel-caption">Product Cards</div>
+                    </div>
                 </div>
+                <button class="carousel-btn next" aria-label="Next slide">›</button>
+                <div class="carousel-dots" aria-hidden="true"></div>
             </div>
         </section>
 
@@ -151,7 +158,7 @@
     </main>
 
     <footer>
-        &copy; <span id="currentYear"></span> Your Company Name
+        &copy; <span id="currentYear"></span> Single Page Test
     </footer>
     <!-- script src -->
     <script src="script.js"></script>
